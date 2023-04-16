@@ -24,6 +24,7 @@
                 <img :src="item.portada " :alt="item.alt " />
 
                 <p v-for="item in item.consola">{{item}}</p>
+                <p :class="item.calificacion >= 8 ? 'green' : 'red'">Calificación {{item.calificacion}}</p>
             </li>
         </ul>
     </div>
